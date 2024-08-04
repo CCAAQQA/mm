@@ -47,7 +47,7 @@ class Userbot(Client):
         )
 
     async def start(self):
-        LOGGER("سورس اكس").info(f"جارِ تشغيل الحساب المساعد . . .")
+        LOGGER("سورس ماتركس").info(f"جارِ تشغيل الحساب المساعد . . .")
         if config.STRING1:
             await self.one.start()
             try:

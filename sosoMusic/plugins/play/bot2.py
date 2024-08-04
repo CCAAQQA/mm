@@ -20,26 +20,26 @@ async def set_bot_name(client, message):
     await message.reply_text("تم تعيين الاسم بنجاح")
 
 Mazen_responses = [
-    "تئبرني 😂♥️ ،",
-    "قلب بلاك 🌚 ⋅",
+    "عيوني 😂♥️ ،",
+    "قلب ماتركس 🌚 ⋅",
     "نعم يا عيوني  ،",
-    "روح بلاك",
+    "روح ماتركس",
     "بلاك مو فاضيلك عم يطبق بوته",
-    "ما ازنخك بقلك بلاك",
+    "ما ازنخك بقلك ماتركس",
     "انتو بني ادمين ليش زنخين اسكت",
 ]
 
-@app.on_message(filters.command(["بلاكي", "بلاك"], ""), group=71135)
+@app.on_message(filters.command(["ماتركس", "ميمو"], ""), group=71135)
 async def Mazen_bot(client, message):
     global name
     bot_username = (await app.get_me()).username
     bar = random.choice(Mazen_responses).format(name=name)
     keyboard = InlineKeyboardMarkup([
-        [InlineKeyboardButton("تحديثات بلاك ⚡", url=f"https://t.me/P_6_B")]
+        [InlineKeyboardButton("تحديثات بلاك ⚡", url=f"https://t.me/Source_Matrix1")]
     ])
     
     await message.reply_text(
-        text=f"**[{bar}](https://t.me/P_6_B)**",
+        text=f"**[{bar}](https://t.me/wc_55)**",
         disable_web_page_preview=True,
         reply_markup=keyboard,
     parse_mode=enums.ParseMode.MARKDOWN)

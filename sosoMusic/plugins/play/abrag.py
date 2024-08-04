@@ -27,8 +27,8 @@ async def abrag(c: Client, m: Message):
         [InlineKeyboardButton("الميزان", callback_data="elmezaan " + str(m.from_user.id))],
         [InlineKeyboardButton("العقرب", callback_data="elaqrab " + str(m.from_user.id))] +
         [InlineKeyboardButton("القوس", callback_data="elqoos " + str(m.from_user.id))],
-         [InlineKeyboardButton("- 𝙔𝙤𝙪𝙨𝙚𝙛", url=f"https://t.me/y_o_v")],
-         [InlineKeyboardButton("Source X Music", url=f"https://t.me/P_6_B")],
+         [InlineKeyboardButton("𝐦𝐢𝐥𝐥𝐢𝐨𝐧𝐚𝐢𝐫𝐞", url=f"https://t.me/C_A_Q")],
+         [InlineKeyboardButton("Source 𝐌𝐚𝐭𝐫𝐢𝐱", url=f"https://t.me/Source_Matrix1")],
         [InlineKeyboardButton("ضيـف البـوت لمجمـوعتـك ⚡", url=f"https://t.me/{app.username}?startgroup=new")],
 
     ])

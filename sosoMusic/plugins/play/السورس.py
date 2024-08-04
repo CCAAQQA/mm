@@ -15,28 +15,28 @@ from random import  choice, randint
 
                 
 @app.on_message(
-    command(["سورس","سورس اكس","السورس"])
+    command(["سورس","سورس ماتركس","السورس"])
     
 )
 async def huhh(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://graph.org/file/4f89eab4c95ae1f68d826.jpg",
+        photo=f"https://telegra.ph/file/75737308889fade2c982a.jpg",
         caption=f"• 𝗧𝗵𝗲 𝗕𝗲𝘀𝘁 𝗦𝗼𝘂𝗿𝗰𝗲 𝗢𝗻 𝗧𝗲𝗹𝗲𝗴𝗮𝗺 🎸 .",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "𖥻 𝗖𝗛𝗔𝗡𝗘𝗟 .", url=f"https://t.me/cecrr"), 
+                        "𝐌𝐚𝐭𝐫𝐢𝐱", url=f"https://t.me/Source_Matrix1"), 
                  InlineKeyboardButton(
-                   "‹ Source X Music ›",       url=f"https://t.me/P_6_B"), 
+                   "‹ Source 𝐌𝐚𝐭𝐫𝐢𝐱 ›",       url=f"https://t.me/wc_55"), 
                  
              ],[ 
             InlineKeyboardButton(
-                        "‹ - 𝙔𝙤𝙪𝙨𝙚𝙛 ›", url=f"https://t.me/y_o_v"), 
+                        "‹ 𝐦𝐢𝐥𝐥𝐢𝐨𝐧𝐚𝐢𝐫𝐞 ›", url=f"https://t.me/C_A_Q"), 
                       
              ],[ 
             InlineKeyboardButton(
-                      "‹ لتنصيب بوت مماثل ›", url=f"https://t.me/P_6_B/234"), 
+                      "‹ لتنصيب بوت مماثل ›", url=f"https://t.me/wc_55/5249"), 
                       
              ],[ 
                   InlineKeyboardButton(
@@ -51,9 +51,9 @@ async def huhh(client: Client, message: Message):
     )
 
 
-@app.on_message(filters.command(["مطور السورس","يوسف","جو","مطور السورس ✯"], ""), group=73) 
+@app.on_message(filters.command(["مطور السورس","بلال","جو","مطور السورس ✯"], ""), group=73) 
 async def deev(client: Client, message: Message):
-     user = await client.get_chat(chat_id="y_o_v")
+     user = await client.get_chat(chat_id="C_A_Q")
      name = user.first_name
      username = user.username 
      bio = user.bio
@@ -77,7 +77,7 @@ async def deev(client: Client, message: Message):
      except:
         pass
 
-@app.on_message(filters.command(["مبرمج السورس","os","لين","لينتي"], ""), group=73) 
+@app.on_message(filters.command(["مبرمج السورس","MT","ميم","ماترر"], ""), group=73) 
 async def deev(client: Client, message: Message):
      user = await client.get_chat(chat_id="lino_02")
      name = user.first_name

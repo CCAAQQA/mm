@@ -12,20 +12,20 @@ async def must_join_channel(bot: Client, msg: Message):
             await bot.get_chat_member("cecrr", msg.from_user.id)
         except UserNotParticipant:
             if "https://t.me/cecrr".isalpha():
-                link = "https://t.me/cecrr"
+                link = "https://t.me/Source_Matrix1"
             else:
-                chat_info = await bot.get_chat("cecrr")
+                chat_info = await bot.get_chat("Source_Matrix1")
                 link = chat_info.invite_link
             try:
                 await msg.reply(
-                    f"⌯︙عذࢪاَ حَبيبي ↫ {msg.from_user.mention} \n⌯︙عـليك الاشـتࢪاك في قنـاة البوت .\n⌯︙قناة : t.me/cecrr 🍓.\nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ",
+                    f"⌯︙عذࢪاَ حَبيبي ↫ {msg.from_user.mention} \n⌯︙عـليك الاشـتࢪاك في قنـاة البوت .\n⌯︙قناة : t.me/Source_Matrix1 🍓.\nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ",
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup([
-                        [InlineKeyboardButton(". 𝖠 ' 𝟣𝟣𝟣 .", url=link)]
+                        [InlineKeyboardButton("𝐌𝐚𝐭𝐫𝐢𝐱", url=link)]
                     ])
                 )
                 await msg.stop_propagation()
             except ChatWriteForbidden:
                 pass
     except ChatAdminRequired:
-        print(f"I'm not admin in the MUST_JOIN chat @cecrr !")
+        print(f"I'm not admin in the MUST_JOIN chat @Source_Matrix1 !")

@@ -47,10 +47,10 @@ def stream_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(text="ايقاف", callback_data=f"ADMIN Pause|{chat_id}"),
             
         ],[
-            InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋 ", url=f"https://t.me/cecrr"),
+            InlineKeyboardButton(text="𝐌𝐚𝐭𝐫𝐢𝐱 ", url=f"https://t.me/Source_Matrix1"),
             
         ],[
-            InlineKeyboardButton(text="- 𝙔𝙤𝙪𝙨𝙚𝙛", url=f"https://t.me/y_o_v"),
+            InlineKeyboardButton(text="- 𝐦𝐢𝐥𝐥𝐢𝐨𝐧𝐚𝐢𝐫𝐞", url=f"https://t.me/C_A_Q"),
         ],[
             InlineKeyboardButton(text="اضف البوت الي مجموعتك او قناتك⚡", url=f"https://t.me/{app.username}?startgroup=true")],
     ]
@@ -65,10 +65,10 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="ايقاف", callback_data=f"ADMIN Pause|{chat_id}"),
             
         ],[
-            InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋 ", url=f"https://t.me/cecrr"),
+            InlineKeyboardButton(text="𝐌𝐚𝐭𝐫𝐢𝐱 ", url=f"https://t.me/Source_Matrix1"),
            
         ],[
-            InlineKeyboardButton(text="- 𝙔𝙤𝙪𝙨𝙚𝙛", url=f"https://t.me/y_o_v"),
+            InlineKeyboardButton(text="- 𝐦𝐢𝐥𝐥𝐢𝐨𝐧𝐚𝐢𝐫𝐞", url=f"https://t.me/C_A_Q"),
         ],[
             InlineKeyboardButton(text="⚡اضف البوت الي مجموعتك او قناتك", url=f"https://t.me/{app.username}?startgroup=true")],
     ]

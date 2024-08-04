@@ -1,5 +1,5 @@
-#https://t.me/y_o_v
-#_____@F_U_O
+#https://t.me/H_8_o
+#_____@C_A_Q
 
 from pyrogram import Client, filters, idle
 from pyrogram import Client

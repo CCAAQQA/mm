@@ -1,5 +1,5 @@
-#https://t.me/Y_o_v
-#_____@F_U_O
+#https://t.me/H_8_o
+#_____@C_A_Q
 
 import os, asyncio
 from typing import Optional

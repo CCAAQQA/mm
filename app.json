@@ -1,0 +1,64 @@
+{
+    "name": "ميـوزك اكس",
+    "description": "- لـ تشغيـل الاغانـي والفيديـو وبث المباشـرة فـي المكالمـات الصوتيـه والمرئيـة عـلى تيليجــرام",
+    "logo": "https://graph.org/file/4f89eab4c95ae1f68d826.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "Zelzal",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "BOT_TOKEN": {
+        "description": "⦗ @Botfather ⦘ ↫ تـــوكـــن الـبـوت",
+        "value": "7047183887:AAFA8pfgf9gt4vDy_1BnKzD2xLGPNUs4Rq8",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "⦗ ايـــدي المطـــور ⦘ ↫ مطـــور بـــوت الميـــوزك",
+        "value": "6094238403",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "⦗ V2 ⦘ ↫ كـود جلسـة الحسـاب المساعـد لـ الميـوزك",
+        "value": "BAGi8fAAgkLxuHXY2qIXGzAWTwxFE2-G4Ml0vMVB8wVtEU97JjS7VSEl34DEaOSmMk6y0S2SYq3doIbDl1_bfc_9j0B19C0pqs9uSTbURPE85yOWt3PoqjepeZjUO5paFZDRAc4rA1SUt3YmqB1B0cI8z4Wk7j4tZ9AWyTw7b4mAR82_BN-VjQrgDgFb99qBzLLm6HYLDO6nmbryLB54PI4B9sxjPzOW9if03D9J4Mj2hi85D0k43Y7t9-qqCbLY3eDQLDux8SJeskkSk9i3fn-4DlnQkCNk1GoRjI7jkRVZpi2UZU8u15fDDDt4Z7pnvAkOmYUPS0veNMPVRzuHIEWyVWLvrQAAAAGqfwr9AA",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "⦗ https://dashboard.heroku.com/account ⦘ ادخـل كود ايبـي كـي",
+        "value": "HRKU-d55d5bde-0d47-4235-b30e-0c678f1a1014",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "⦗ اســـم التطبيـــق - نفـس اول مربـع بالقائمـة نسـخ لصـق حـروف انكلـش سمــول ⦗ صغيـره فقـط",
+        "value": "",
+        "required": false
+      },
+      "LOGGER_ID": {
+        "description": "ايـدي قروب السـجل",
+        "value": "-1001626997477",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "formation": {
+          "worker": {
+              "quantity": 1,
+              "size": "basic"
+          }
+      },
+      "stack": "container"
+  }

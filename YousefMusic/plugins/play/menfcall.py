@@ -8,18 +8,18 @@ from YousefMusic.core.call import Zelzaly
 from YousefMusic.utils.database import *
 from pytgcalls.exceptions import (NoActiveGroupCall,TelegramServerError,AlreadyJoinedError)
 
-@app.on_message(filters.regex("^مين في الكول$"))
+@app.on_message(filters.regex("^منو بل التصال$"))
 async def strcall(client, message):
     assistant = await group_assistant(Zelzaly,message.chat.id)
     try:
         await assistant.join_group_call(message.chat.id, AudioPiped("./YousefMusic/assets/call.mp3"), stream_type=StreamType().pulse_stream)
-        text="- الحبايب اللي في الكول 🫶 :\n\n"
+        text="- الحبايب اللي في التصال 🫶 :\n\n"
         participants = await assistant.get_participants(message.chat.id)
         k =0
         for participant in participants:
             info = participant
             if info.muted == False:
-                mut="بيتكلم 🗣 "
+                mut="يحجي 🗣 "
             else:
                 mut="ساكت 🔕 "
             user = await client.get_users(participant.user_id)
@@ -30,17 +30,17 @@ async def strcall(client, message):
         await asyncio.sleep(7)
         await assistant.leave_group_call(message.chat.id)
     except NoActiveGroupCall:
-        await message.reply(f"الكول مش مفتوح اصلاً")
+        await message.reply(f"التصال ما مفتوح اصلاً")
     except TelegramServerError:
         await message.reply(f"ابعت الامر تاني في مشكله في سيرفر التليجرام ❌")
     except AlreadyJoinedError:
-        text="الحبايب اللي في الكول 🫶 :\n\n"
+        text="الحبايب اللي في التصال 🫶 :\n\n"
         participants = await assistant.get_participants(message.chat.id)
         k =0
         for participant in participants:
             info = participant
             if info.muted == False:
-                mut="بيتكلم 🗣"
+                mut="يحجي 🗣"
             else:
                 mut="ساكت 🔕 "
             user = await client.get_users(participant.user_id)
@@ -50,7 +50,7 @@ async def strcall(client, message):
         await message.reply(f"{text}")
 @app.on_message(filters.video_chat_started)
 async def brah(client, message):
-       await message.reply("تم فتح الكول 👤")
+       await message.reply("تم فتح التصال 👤")
 @app.on_message(filters.video_chat_ended)
 async def brah2(client, message):
     da = message.video_chat_ended.duration
@@ -58,37 +58,37 @@ async def brah2(client, message):
     ho = divmod(ma[0], 60)
     day = divmod(ho[0], 24)
     if da < 60:
-       await message.reply(f"تم انهاء الكول و مدته {da} ثواني وقفله")        
+       await message.reply(f"تم انهاء التصال و مدته {da} ثواني وقفله")        
     elif 60 < da < 3600:
         if 1 <= ma[0] < 2:
-            await message.reply(f"تم انهاء الكول و مدته دقيقه")
+            await message.reply(f"تم انهاء التصال و مدته دقيقه")
         elif 2 <= ma[0] < 3:
-            await message.reply(f"تم انهاء الكول و مدته دقيقتين ")
+            await message.reply(f"تم انهاء التصال و مدته دقيقتين ")
         elif 3 <= ma[0] < 11:
-            await message.reply(f"تم انهاء الكول و مدته {ma[0]} دقايق ")  
+            await message.reply(f"تم انهاء التصال و مدته {ma[0]} دقايق ")  
         else:
-            await message.reply(f"تم إنهاء الكول و مدته {ma[0]} دقيقه")
+            await message.reply(f"تم إنهاء التصال و مدته {ma[0]} دقيقه")
     elif 3600 < da < 86400:
         if 1 <= ho[0] < 2:
-            await message.reply(f"تم انهاء الكول و مدته ساعه ")
+            await message.reply(f"تم انهاء التصال و مدته ساعه ")
         elif 2 <= ho[0] < 3:
-            await message.reply(f"تم انهاء الكول و مدته ساعتين ")
+            await message.reply(f"تم انهاء التصال و مدته ساعتين ")
         elif 3 <= ho[0] < 11:
-            await message.reply(f"تم انهاء الكول و مدته {ho[0]} ساعات ")  
+            await message.reply(f"تم انهاء التصال و مدته {ho[0]} ساعات ")  
         else:
-            await message.reply(f"تم إنهاء الكول و مدته {ho[0]} ساعة ")
+            await message.reply(f"تم إنهاء التصال و مدته {ho[0]} ساعة ")
     else:
         if 1 <= day[0] < 2:
-            await message.reply(f"تم انهاء الكول و مدته يوم ")
+            await message.reply(f"تم انهاء التصال و مدته يوم ")
         elif 2 <= day[0] < 3:
-            await message.reply(f" تم انهاء الكول و مدته يومين ")
+            await message.reply(f" تم انهاء التصال و مدته يومين ")
         elif 3 <= day[0] < 11:
-            await message.reply(f" تم انهاء الكول و مدته {day[0]} ايام ")  
+            await message.reply(f" تم انهاء التصال و مدته {day[0]} ايام ")  
         else:
-            await message.reply(f" تم إنهاء الكول و مدته {day[0]} يوم")
+            await message.reply(f" تم إنهاء التصال و مدته {day[0]} يوم")
 @app.on_message(filters.video_chat_members_invited)
 async def fuckoff(client, message):
-           text = f"⎉︙قــــام ← {message.from_user.mention}"
+           text = f"⎉︙ قــــام الحب ← {message.from_user.mention}"
            x = 0
            for user in message.video_chat_members_invited.users:
              try:

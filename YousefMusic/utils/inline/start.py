@@ -25,7 +25,7 @@ def start_panel(_):
                 text="‹ المطور ›", url=f"https://t.me/C_A_Q"
             ),
             InlineKeyboardButton(
-                text="‹ تنصيب بوت ›", url=f"https://t.me/C_A_Q"
+                text="‹لتنصيب بوت مشابه›", url=f"https://t.me/C_AQO/25"
             ),
         ],
     ]
@@ -50,7 +50,7 @@ def private_panel(_, OWNER_ID: Union[bool, int] = None):
                 text="‹ المطور ›", url=f"https://t.me/C_A_Q"
             ),
             InlineKeyboardButton(
-                text="‹ تنصيب بوت ›", url=f"https://t.me/C_A_Q"
+                text="‹لتنصيب بوت مشابه›", url=f"https://t.me/C_AQO/25"
             ),
         ],
         [

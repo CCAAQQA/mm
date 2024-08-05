@@ -6,6 +6,21 @@ from pyrogram.types import InlineKeyboardButton
 
 from YousefMusic.utils.formatters import time_to_seconds
 
+selections = [
+    "▁▄▂▇▄▅▄▅▃",
+    "▁▃▇▂▅▇▄▅▃",
+    "▃▁▇▂▅▃▄▃▅",
+    "▃▄▂▄▇▅▃▅▁",
+    "▁▃▄▂▇▃▄▅▃",
+    "▃▁▄▂▅▃▇▃▅",
+    "▁▇▄▂▅▄▅▃▄",
+    "▁▃▅▇▂▅▄▃▇",
+    "▃▅▂▅▇▁▄▃▁",
+    "▇▅▂▅▃▄▃▁▃",
+    "▃▇▂▅▁▅▄▃▁",
+    "▅▄▇▂▅▂▄▇▁",
+    "▃▅▂▅▃▇▄▅▃",
+]
 
 def track_markup(_, videoid, user_id, channel, fplay):
     buttons = [
@@ -45,12 +60,13 @@ def stream_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(text="انهاء", callback_data=f"ADMIN Stop|{chat_id}"),
             InlineKeyboardButton(text="استكمال", callback_data=f"ADMIN Resume|{chat_id}"),
             InlineKeyboardButton(text="ايقاف", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="تخطي", callback_data=f"ADMIN Skip|{chat_id}"),
+                    
+        ],[
+            InlineKeyboardButton(text="السورس ", url=f"https://t.me/Source_Matrix1"),
             
         ],[
-            InlineKeyboardButton(text="𝐌𝐚𝐭𝐫𝐢𝐱 ", url=f"https://t.me/Source_Matrix1"),
-            
-        ],[
-            InlineKeyboardButton(text="- 𝐦𝐢𝐥𝐥𝐢𝐨𝐧𝐚𝐢𝐫𝐞", url=f"https://t.me/C_A_Q"),
+            InlineKeyboardButton(text="- مبرمج السورس", url=f"https://t.me/C_A_Q"),
         ],[
             InlineKeyboardButton(text="اضف البوت الي مجموعتك او قناتك⚡", url=f"https://t.me/{app.username}?startgroup=true")],
     ]
@@ -63,12 +79,13 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="انهاء", callback_data=f"ADMIN Stop|{chat_id}"),
             InlineKeyboardButton(text="استكمال", callback_data=f"ADMIN Resume|{chat_id}"),
             InlineKeyboardButton(text="ايقاف", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="تخطي", callback_data=f"ADMIN Skip|{chat_id}"),
             
         ],[
-            InlineKeyboardButton(text="𝐌𝐚𝐭𝐫𝐢𝐱 ", url=f"https://t.me/Source_Matrix1"),
+            InlineKeyboardButton(text="السورس ", url=f"https://t.me/Source_Matrix1"),
            
         ],[
-            InlineKeyboardButton(text="- 𝐦𝐢𝐥𝐥𝐢𝐨𝐧𝐚𝐢𝐫𝐞", url=f"https://t.me/C_A_Q"),
+            InlineKeyboardButton(text="- مبرمج السورس", url=f"https://t.me/C_A_Q"),
         ],[
             InlineKeyboardButton(text="⚡اضف البوت الي مجموعتك او قناتك", url=f"https://t.me/{app.username}?startgroup=true")],
     ]

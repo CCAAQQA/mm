@@ -52,11 +52,10 @@ def stream_markup_timer(_, chat_id, played, dur):
             
         ],[
             InlineKeyboardButton(text="- مبرمج السورس", url=f"https://t.me/C_A_Q"),
-        ],[
-            InlineKeyboardButton(text="اغلاق", callback_data=f"ADMIN CloseA|{chat_id}"),
+         ],[
+            InlineKeyboardButton(text="اضف البوت الي مجموعتك او قناتك⚡", url=f"https://t.me/{app.username}?startgroup=true")],
     ]
     return buttons
-
 
 def stream_markup(_, chat_id):
     buttons = [
@@ -72,7 +71,7 @@ def stream_markup(_, chat_id):
         ],[
             InlineKeyboardButton(text="- مبرمج السورس", url=f"https://t.me/C_A_Q"),
         ],[
-            InlineKeyboardButton(text="اغلاق", callback_data=f"ADMIN CloseA|{chat_id}"),
+            InlineKeyboardButton(text="اضف البوت الي مجموعتك او قناتك⚡", url=f"https://t.me/{app.username}?startgroup=true")],
     ]
     return buttons
 

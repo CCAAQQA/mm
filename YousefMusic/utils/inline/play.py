@@ -42,17 +42,18 @@ def stream_markup_timer(_, chat_id, played, dur):
                 callback_data="GetTimer",
             )
         ],[  
-            InlineKeyboardButton(text="انهاء", callback_data=f"ADMIN Stop|{chat_id}"),
-            InlineKeyboardButton(text="استكمال", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="ايقاف", callback_data=f"ADMIN Pause|{chat_id}"),
+             InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="☆", callback_data=f"add_playlist {videoid}"),
+            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
             
         ],[
-            InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋 ", url=f"https://t.me/cecrr"),
+            InlineKeyboardButton(text="السورس ", url=f"https://t.me/Source_Matrix1"),
             
         ],[
-            InlineKeyboardButton(text="- 𝙔𝙤𝙪𝙨𝙚𝙛", url=f"https://t.me/y_o_v"),
+            InlineKeyboardButton(text="- مبرمج السورس", url=f"https://t.me/C_A_Q"),
         ],[
-            InlineKeyboardButton(text="اضف البوت الي مجموعتك او قناتك⚡", url=f"https://t.me/{app.username}?startgroup=true")],
+            text="〆 اغلاق 〆", callback_data=f"ADMIN CloseA|{chat_id}")],
     ]
     return buttons
 
@@ -60,17 +61,18 @@ def stream_markup_timer(_, chat_id, played, dur):
 def stream_markup(_, chat_id):
     buttons = [
         [
-            InlineKeyboardButton(text="انهاء", callback_data=f"ADMIN Stop|{chat_id}"),
-            InlineKeyboardButton(text="استكمال", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="ايقاف", callback_data=f"ADMIN Pause|{chat_id}"),
+             InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="☆", callback_data=f"add_playlist {videoid}"),
+            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
             
         ],[
-            InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋 ", url=f"https://t.me/cecrr"),
+            InlineKeyboardButton(text="السورس ", url=f"https://t.me/Source_Matrix1"),
            
         ],[
-            InlineKeyboardButton(text="- 𝙔𝙤𝙪𝙨𝙚𝙛", url=f"https://t.me/y_o_v"),
+            InlineKeyboardButton(text="- مبرمج السورس", url=f"https://t.me/C_A_Q"),
         ],[
-            InlineKeyboardButton(text="⚡اضف البوت الي مجموعتك او قناتك", url=f"https://t.me/{app.username}?startgroup=true")],
+            text="〆 اغلاق 〆", callback_data=f"ADMIN CloseA|{chat_id}")],
     ]
     return buttons
 

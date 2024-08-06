@@ -53,7 +53,7 @@ def stream_markup_timer(_, chat_id, played, dur):
         ],[
             InlineKeyboardButton(text="- مبرمج السورس", url=f"https://t.me/C_A_Q"),
         ],[
-            text="〆 اغلاق 〆", callback_data=f"ADMIN CloseA|{chat_id}"),
+            InlineKeyboardButton(text="اغلاق", callback_data=f"ADMIN CloseA|{chat_id}"),
     ]
     return buttons
 
@@ -72,7 +72,7 @@ def stream_markup(_, chat_id):
         ],[
             InlineKeyboardButton(text="- مبرمج السورس", url=f"https://t.me/C_A_Q"),
         ],[
-            text="〆 اغلاق 〆", callback_data=f"ADMIN CloseA|{chat_id}"),
+            InlineKeyboardButton(text="اغلاق", callback_data=f"ADMIN CloseA|{chat_id}"),
     ]
     return buttons
 
